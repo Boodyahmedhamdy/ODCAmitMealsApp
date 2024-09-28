@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -26,7 +27,7 @@ fun MealListItem(
     Row(
         modifier = modifier.clickable {
             onClick(state.id.toInt())
-        },
+        }.shadow(4.dp),
         verticalAlignment = Alignment.CenterVertically,
 
     ) {

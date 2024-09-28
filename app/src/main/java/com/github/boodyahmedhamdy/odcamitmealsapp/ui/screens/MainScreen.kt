@@ -3,6 +3,7 @@ package com.github.boodyahmedhamdy.odcamitmealsapp.ui.screens
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
@@ -24,7 +25,7 @@ fun MainScreen(
 ) {
     if(state.isLoading) {
         Box(modifier = modifier, contentAlignment = Alignment.Center) {
-            CircularProgressIndicator(modifier = modifier)
+            CircularProgressIndicator(modifier = Modifier.size(200.dp))
         }
 
     } else {
